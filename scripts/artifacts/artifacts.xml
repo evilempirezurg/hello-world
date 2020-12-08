@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='DBeaver - Office support' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
+  <properties size='3'>
+    <property name='publishPackFilesAsSiblings' value='true'/>
+    <property name='p2.compressed' value='true'/>
+    <property name='p2.timestamp' value='1606653169468'/>
+  </properties>
+  <mappings size='5'>
+    <rule filter='(&amp; (classifier=osgi.bundle) (format=packed))' output='${repoUrl}/plugins/${id}_${version}.jar.pack.gz'/>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature) (format=packed))' output='${repoUrl}/features/${id}_${version}.jar.pack.gz'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='4'>
+    <artifact classifier='osgi.bundle' id='org.jkiss.dbeaver.data.office.ui' version='1.0.1.202011291229'>
+      <properties size='8'>
+        <property name='artifact.size' value='10404'/>
+        <property name='download.size' value='10404'/>
+        <property name='maven-groupId' value='org.jkiss.dbeaver'/>
+        <property name='maven-artifactId' value='org.jkiss.dbeaver.data.office.ui'/>
+        <property name='maven-version' value='1.0.1-SNAPSHOT'/>
+        <property name='download.md5' value='4911f33aa9ed0dc507bd4ec10a2082a0'/>
+        <property name='download.checksum.md5' value='4911f33aa9ed0dc507bd4ec10a2082a0'/>
+        <property name='download.checksum.sha-256' value='be008099c8713803211184d1062c3fa784a306f33777f30e236c74088ee2f034'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.jkiss.dbeaver.ext.office.feature' version='1.1.83.202011291229'>
+      <properties size='9'>
+        <property name='artifact.size' value='4991'/>
+        <property name='download.size' value='4991'/>
+        <property name='maven-groupId' value='org.jkiss.dbeaver'/>
+        <property name='maven-artifactId' value='org.jkiss.dbeaver.ext.office.feature'/>
+        <property name='maven-version' value='1.1.83-SNAPSHOT'/>
+        <property name='download.contentType' value='application/zip'/>
+        <property name='download.md5' value='047226c929607c29c175402c5f334980'/>
+        <property name='download.checksum.md5' value='047226c929607c29c175402c5f334980'/>
+        <property name='download.checksum.sha-256' value='00d19f9c86cfe44553aada30aadc0cbab706df5e6fd7032c51d9b6c309faf036'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.jkiss.bundle.apache.poi' version='4.1.1'>
+      <properties size='8'>
+        <property name='artifact.size' value='15996890'/>
+        <property name='download.size' value='15996890'/>
+        <property name='maven-groupId' value='org.jkiss.bundle'/>
+        <property name='maven-artifactId' value='org.jkiss.bundle.apache.poi'/>
+        <property name='maven-version' value='4.1.1'/>
+        <property name='download.md5' value='40c1afcdc2c70773bd7da38ab64c5008'/>
+        <property name='download.checksum.md5' value='40c1afcdc2c70773bd7da38ab64c5008'/>
+        <property name='download.checksum.sha-256' value='cfcb95cc5fb3c009ebcb6ee91f49cb7eed85125825f28ffed6c7ee776d6daf86'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.jkiss.dbeaver.data.office' version='1.1.84.202011291229'>
+      <properties size='8'>
+        <property name='artifact.size' value='20998'/>
+        <property name='download.size' value='20998'/>
+        <property name='maven-groupId' value='org.jkiss.dbeaver'/>
+        <property name='maven-artifactId' value='org.jkiss.dbeaver.data.office'/>
+        <property name='maven-version' value='1.1.84-SNAPSHOT'/>
+        <property name='download.md5' value='06730f7e368d88de383fed6327098856'/>
+        <property name='download.checksum.md5' value='06730f7e368d88de383fed6327098856'/>
+        <property name='download.checksum.sha-256' value='2ca3420cf7e93ebbbc1999886237bfc2a1cdcc7160dfb0257a0a96d26d9cbcec'/>
+      </properties>
+    </artifact>
+  </artifacts>
+</repository>
